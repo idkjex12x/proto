@@ -286,17 +286,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-<<<<<<< Updated upstream
-=======
-    - target: {fileID: 1702054732690607869, guid: 40a20a16e1988d94f8bee64f57f468a1, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1702054732690607869, guid: 40a20a16e1988d94f8bee64f57f468a1, type: 3}
-      propertyPath: m_GenerationType
-      value: 1
-      objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 4959196170058523530, guid: 40a20a16e1988d94f8bee64f57f468a1, type: 3}
       propertyPath: m_Name
       value: Square (3)
