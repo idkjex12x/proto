@@ -4,6 +4,19 @@ using UnityEngine;
 
 public class playermovement  : MonoBehaviour
 {
+// Relates to animation controller //
+    public enum PlayerState 
+    {
+        Idle, 
+        Run, 
+        Kick
+    }
+    PlayerState state;
+
+    bool stateComplete;
+
+////////////////////////////////////
+
     public float playerspeed;
     private  Rigidbody2D rb;
     public Vector2 playerDirection;
@@ -28,7 +41,61 @@ public class playermovement  : MonoBehaviour
     {
         rb.velocity = new Vector2(playerDirection.x * playerspeed, playerDirection.y * playerspeed);
 
+        if (stateComplete) {
+            SelectState();
+        }
+        UpdateState();
+// Relates to player animations //
+    void SelectState() {
+        stateComplete = false;
 
+        if (!Input.GetKeyDown("Space")) {
+            if (playerDirection.x == 0)
+            if (playerDirection.y == 0) {
+                state = PlayerState.Idle;
+                
+            } else {
+                state = PlayerState.Run;
+            }
+        } else {
+            state = PlayerState.Kick;
+        }
+    }
+
+    void UpdateState() {
+        switch (state){
+            case PlayerState.Idle:
+                UpdateIdle();
+                break;
+            case PlayerState.Run:
+                UpdateRun();
+                break;
+            case PlayerState.Kick:
+                UpdateKick();
+                break;
+        }
+    }
+
+    void UpdateIdle() {
+        if (playerDirection.x != 0)
+        if (playerDirection.y != 0)
+            stateComplete = true;
+            state = PlayerState.Run;
+    }
+
+    void UpdateRun() {
+        if (playerDirection.x == 0)
+        if (playerDirection.y == 0)
+            stateComplete = true;
+            state = PlayerState.Idle;
+    }
+
+    void UpdateKick() {
+        if (Input.GetKeyDown("Space"));
+            stateComplete = true;
+            state = PlayerState.Kick;
+    }
+//////////////////////////////////
 // the script down here flips the player sprite when moving
         if (playerDirection.x > 0 && facingLeft)
         {
