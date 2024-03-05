@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class playermovement  : MonoBehaviour
 {
+// Relates to animation controller //
+    
+
     public float playerspeed;
     private  Rigidbody2D rb;
     public Vector2 playerDirection;
     private Animator anim;
+
+    bool facingLeft = true;
 
     // Start is called before the first frame update
     void Start()
@@ -22,13 +27,36 @@ public class playermovement  : MonoBehaviour
         float directionX = Input.GetAxisRaw("Horizontal");
         float directionY = Input.GetAxisRaw("Vertical");
 
+        anim.SetFloat("xSpeed", directionX);
+        anim.SetFloat("ySpeed", directionY);
+
         playerDirection = new Vector2(directionX, directionY).normalized;
     }
     void FixedUpdate()
     {
         rb.velocity = new Vector2(playerDirection.x * playerspeed, playerDirection.y * playerspeed);
 
-        anim.SetFloat("xSpeed", rb.velocity.x);
-        anim.SetFloat("ySpeed", rb.velocity.y);
+        
+
+        
+
+// the script down here flips the player sprite when moving
+        if (playerDirection.x > 0 && facingLeft)
+        {
+            Flip();
+        }
+        if (playerDirection.x < 0 && !facingLeft)
+        {
+            Flip();
+        }
+    }
+
+    void Flip()
+    {
+        Vector3 currentScale = gameObject.transform.localScale;
+        currentScale.x *= -1;
+        gameObject.transform.localScale = currentScale;
+
+        facingLeft = !facingLeft;
     }
 }
