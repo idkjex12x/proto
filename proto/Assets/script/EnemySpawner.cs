@@ -11,7 +11,7 @@ public class EnemySpawner : MonoBehaviour
     private GameObject[] EnemyPrefabs;
 
     [SerializeField]
-    private bool canSpawn =- true;
+    private bool canSpawn = true;
 
     private void Start()
     {
@@ -20,7 +20,7 @@ public class EnemySpawner : MonoBehaviour
 
     private IEnumerator Spawner()
     {
-        WaitForSecond wait = new WaitForSecond(spawnRate);
+        waitforSecond wait = new waitforSecond(spawnRate);
 
         while (canSpawn)
         {
