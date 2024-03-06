@@ -408,6 +408,50 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &992482940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 992482941}
+  - component: {fileID: 992482942}
+  m_Layer: 0
+  m_Name: EnemySpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &992482941
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992482940}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.59, y: -0.61, z: 0.018299038}
+  m_LocalScale: {x: 0.98232, y: 0.98232, z: 0.98232}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &992482942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992482940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4630a619a3891548901bdebdb1800c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1427028289 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3302474261316708091, guid: 430e7ddb84a7d3045aec6ab813f25db9, type: 3}
@@ -728,11 +772,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4617789220562152378, guid: f4b7f43eb8edfc64b9e0dc068c36b8d7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.5554493
+      value: -2.94
       objectReference: {fileID: 0}
     - target: {fileID: 4617789220562152378, guid: f4b7f43eb8edfc64b9e0dc068c36b8d7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.57226205
+      value: -2.95
       objectReference: {fileID: 0}
     - target: {fileID: 4617789220562152378, guid: f4b7f43eb8edfc64b9e0dc068c36b8d7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -904,3 +948,4 @@ SceneRoots:
   - {fileID: 324329610310587269}
   - {fileID: 6012589027611183091}
   - {fileID: 7690891224172909166}
+  - {fileID: 992482941}
