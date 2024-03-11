@@ -452,6 +452,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4630a619a3891548901bdebdb1800c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnRate: 1
+  EnemyPrefabs:
+  - {fileID: 238966824480680972, guid: 288ec65ba1e71b946b4ffda703a33855, type: 3}
+  canSpawn: 1
 --- !u!1 &1427028289 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3302474261316708091, guid: 430e7ddb84a7d3045aec6ab813f25db9, type: 3}
