@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     [SerializeField]
-    private float spawnRate = 1f;
+    private float spawnRate = 1.0f;
 
     [SerializeField]
     private GameObject[] EnemyPrefabs;
@@ -20,11 +20,11 @@ public class EnemySpawner : MonoBehaviour
 
     private IEnumerator Spawner()
     {
-        waitforSecond wait = new waitforSecond(spawnRate);
+       
 
         while (canSpawn)
         {
-            yield return wait;
+            yield return new WaitForSeconds(spawnRate);
             int rand = Random.Range(0, EnemyPrefabs.Length);
             GameObject enemyToSpawn = EnemyPrefabs[rand];
 
