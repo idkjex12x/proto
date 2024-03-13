@@ -33,15 +33,15 @@ public class Enemy : MonoBehaviour
     {
         rb.velocity = transform.right * speed;
     }
-    /*
+    
     private void RotateTowardsTarget()
     {
         Vector2 targetDirection = target.position - transform.position;
-        float angle = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg - 95f;
+        float angle = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg - 100f;
         Quaternion q = Quaternion.Euler(new Vector3(0, 0, angle));
         transform.localRotation = Quaternion.Slerp(transform.localRotation, q, rotateSpeed);
     }
-    */
+    
     private void GetTarget()
     {
         if (GameObject.FindGameObjectWithTag("Player"))
@@ -51,7 +51,7 @@ public class Enemy : MonoBehaviour
        
 
     }
-
+    
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Player"))
