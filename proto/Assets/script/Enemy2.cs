@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy2 : MonoBehaviour
 {
     public Transform target;
     public float speed = 3f;
@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
-       rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
@@ -31,7 +31,7 @@ public class Enemy : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = transform.right * speed;
+        rb.velocity = -transform.right;
     }
     /*
     private void RotateTowardsTarget()
@@ -48,7 +48,7 @@ public class Enemy : MonoBehaviour
         {
             target = GameObject.FindGameObjectWithTag("Player").transform;
         }
-       
+
 
     }
 
