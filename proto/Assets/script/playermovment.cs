@@ -11,8 +11,12 @@ public class playermovement  : MonoBehaviour
     private  Rigidbody2D rb;
     public Vector2 playerDirection;
     private Animator anim;
+    float directionX;
+    float directionY;
+
 
     bool facingLeft = true;
+    private bool isRunning = false;
 
     // Start is called before the first frame update
     void Start()
@@ -24,13 +28,13 @@ public class playermovement  : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float directionX = Input.GetAxisRaw("Horizontal");
-        float directionY = Input.GetAxisRaw("Vertical");
-
-        anim.SetFloat("xSpeed", directionX);
-        anim.SetFloat("ySpeed", directionY);
+        directionX = Input.GetAxisRaw("Horizontal");
+        directionY = Input.GetAxisRaw("Vertical");
+        //anim.SetFloat("xSpeed", directionX);
+        //anim.SetFloat("ySpeed", directionY);
 
         playerDirection = new Vector2(directionX, directionY).normalized;
+        IsRunning();
     }
     void FixedUpdate()
     {
@@ -59,4 +63,17 @@ public class playermovement  : MonoBehaviour
 
         facingLeft = !facingLeft;
     }
-}
+
+    private void IsRunning()
+    {
+        if ((directionX < 0 || directionY < 0 || directionX > 0 || directionY > 0))
+        { 
+            anim.SetBool("isRunning", true);
+        }
+
+        if (directionX == 0 && directionY == 0)
+        {
+            anim.SetBool("isRunning", false);
+        }
+    }
+ }
