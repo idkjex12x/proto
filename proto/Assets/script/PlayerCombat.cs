@@ -33,3 +33,4 @@ public class PlayerCombat : MonoBehaviour
             Debug.Log("we hit" + enemy.name);
         }
     }
+}
