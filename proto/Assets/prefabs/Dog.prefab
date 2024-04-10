@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 6054553752297374603}
   - component: {fileID: 5250958066582094103}
   - component: {fileID: 1531133555356289324}
+  - component: {fileID: 3015808150991463581}
   m_Layer: 0
   m_Name: Dog
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -193,6 +194,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70416b47cf94c024db1eae7bc0e26679, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 1331072782656854, guid: bf195e763a348a449a608cee379842d5, type: 3}
   speed: 5
   rotateSpeed: 0.0015
+--- !u!114 &3015808150991463581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5021699675136457529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 797295f2d6c90b44e8934fa83fab24b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pHealth: {fileID: 1165477687249055020, guid: bf195e763a348a449a608cee379842d5, type: 3}
+  damage: 1

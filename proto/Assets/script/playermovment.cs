@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class playermovement  : MonoBehaviour
 {
-// Relates to animation controller //
-    
+    // Relates to animation controller //
+
 
     public float playerspeed;
     private  Rigidbody2D rb;
@@ -17,6 +18,8 @@ public class playermovement  : MonoBehaviour
 
     bool facingLeft = true;
     private bool isRunning = false;
+    private bool fasterRun = false;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -35,7 +38,32 @@ public class playermovement  : MonoBehaviour
 
         playerDirection = new Vector2(directionX, directionY).normalized;
         IsRunning();
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            anim.SetBool("fasterRun", true);
+        }
+
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            anim.SetBool("fasterRun", false);
+        }
+
+        playerDirection = new Vector2(directionX, directionY).normalized;
+        FasterRun();
     }
+
+    private void OnGUI()
+    {
+        Event space = Event.current;
+        if (space.isKey)
+        {
+            FasterRun();
+        }
+    }
+
+
+
     void FixedUpdate()
     {
         rb.velocity = new Vector2(playerDirection.x * playerspeed, playerDirection.y * playerspeed);
@@ -75,5 +103,21 @@ public class playermovement  : MonoBehaviour
         {
             anim.SetBool("isRunning", false);
         }
+
+     
     }
- }
+
+    private void FasterRun()
+    {
+        if ((directionX < 0 || directionY < 0 || directionX > 0 || directionY > 0))
+        {
+            anim.SetBool("fasterRun", true);
+        }
+
+        if (directionX == 0 && directionY == 0)
+        {
+            anim.SetBool("fasterRun", false);
+        }
+    }
+
+}

@@ -1,0 +1,602 @@
+fileFormatVersion: 2
+guid: 30977490e474bbb44ad0fc3238e86f28
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 13
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayerATKs+Run-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 131.04762
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd66c3afd4b6f1345a0144a98d390ef3
+      internalID: -589596129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerATKs+Run-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 0
+        width: 131.04762
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b17354bf65d1da4387372baaa13c176
+      internalID: -1948964734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerATKs+Run-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 0
+        width: 131.04762
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 194a9e225b203fa46be319ccdaf26fce
+      internalID: -986982069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerATKs+Run-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 0
+        width: 131.04762
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd20f2d2576df4408a5a62686a8af14
+      internalID: -1964481338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerATKs+Run-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 0
+        width: 131.04762
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 987e05959b20b01459c9e16683bba290
+      internalID: -1705187443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerATKs+Run-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 0
+        width: 131.04762
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7af3a610908b8b448b04f8b6a157a0cf
+      internalID: -126311856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerATKs+Run-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 0
+        width: 131.04762
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92fd3818dfb6fc14199380bc3185f3d9
+      internalID: 1309088662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerATKs+Run-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 0
+        width: 131.04762
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9389e8f57a25d994d9a5dcf15001ca05
+      internalID: 1659669022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerATKs+Run-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 0
+        width: 131.04762
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cef4209fa096c94482362e672988b53
+      internalID: -572546340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerATKs+Run-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 0
+        width: 131.04762
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856d013bfe231ca4181fd7083c81fa64
+      internalID: -1031224735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerATKs+Run-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 0
+        width: 131.04762
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c8753b303a4f084f8a03a46f2bdedfd
+      internalID: -2024449191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerATKs+Run-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 0
+        width: 131.04762
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd1f22c2c27d13c43bd20a0b25bb7c5f
+      internalID: -114332987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerATKs+Run-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 0
+        width: 131.04762
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee800a3c6b2efa4e8b627304e5e1120
+      internalID: 1042693315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerATKs+Run-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1703
+        y: 0
+        width: 131.04762
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61ac9bf6f95a0b84bbaffdee6a34b6c0
+      internalID: -2075656552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerATKs+Run-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 0
+        width: 131.04762
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fdd83fc9edc3504890939b92e89d3b7
+      internalID: -1033597775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerATKs+Run-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1965
+        y: 0
+        width: 131.04762
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 027a9f1004de8044e83b8eaee35a30fa
+      internalID: -1929579224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerATKs+Run-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2096
+        y: 0
+        width: 131.04762
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97eb166174d8dcd469566a89637b817c
+      internalID: -2112514102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerATKs+Run-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2227
+        y: 0
+        width: 131.04762
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e7c7aa5086dff4f85fe2a1955c242f
+      internalID: -1956520214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerATKs+Run-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 2358
+        y: 0
+        width: 131.04762
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d2e9f51704b2b4a8cdae30bba2632b
+      internalID: 1208206136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerATKs+Run-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2489
+        y: 0
+        width: 131.04762
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2436e350a5577b147a09b88115d5d789
+      internalID: -666216534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerATKs+Run-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 2620
+        y: 0
+        width: 131.04762
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd5555322ff03a74fb3e9c4fe739657b
+      internalID: 1805057556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PlayerATKs+Run-Sheet_0: -589596129
+      PlayerATKs+Run-Sheet_1: -1948964734
+      PlayerATKs+Run-Sheet_10: -2024449191
+      PlayerATKs+Run-Sheet_11: -114332987
+      PlayerATKs+Run-Sheet_12: 1042693315
+      PlayerATKs+Run-Sheet_13: -2075656552
+      PlayerATKs+Run-Sheet_14: -1033597775
+      PlayerATKs+Run-Sheet_15: -1929579224
+      PlayerATKs+Run-Sheet_16: -2112514102
+      PlayerATKs+Run-Sheet_17: -1956520214
+      PlayerATKs+Run-Sheet_18: 1208206136
+      PlayerATKs+Run-Sheet_19: -666216534
+      PlayerATKs+Run-Sheet_2: -986982069
+      PlayerATKs+Run-Sheet_20: 1805057556
+      PlayerATKs+Run-Sheet_3: -1964481338
+      PlayerATKs+Run-Sheet_4: -1705187443
+      PlayerATKs+Run-Sheet_5: -126311856
+      PlayerATKs+Run-Sheet_6: 1309088662
+      PlayerATKs+Run-Sheet_7: 1659669022
+      PlayerATKs+Run-Sheet_8: -572546340
+      PlayerATKs+Run-Sheet_9: -1031224735
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
