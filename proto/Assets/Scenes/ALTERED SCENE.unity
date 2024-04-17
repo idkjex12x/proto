@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 386627799}
   - component: {fileID: 386627798}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -672,7 +672,7 @@ GameObject:
   - component: {fileID: 1797144059}
   - component: {fileID: 1797144058}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Player_Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
