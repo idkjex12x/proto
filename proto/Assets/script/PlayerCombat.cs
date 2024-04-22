@@ -22,7 +22,7 @@ public class PlayerCombat : MonoBehaviour
     void Attack()
     {
         //Play an attack animation 
-        animator.SetTrigger("Attack");
+        animator.SetTrigger("Punch");
 
         //Detact enemies in range of attack
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);

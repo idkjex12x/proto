@@ -7,7 +7,7 @@ public class EnemyHealth : MonoBehaviour
 {
     public float health;
     public float maxHealth;
-    public Image HealthBar_E;
+    //public Image HealthBar_E;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +18,7 @@ public class EnemyHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        HealthBar_E.fillAmount = Mathf.Clamp(health / maxHealth, 0, 1);
+        //HealthBar_E.fillAmount = Mathf.Clamp(health / maxHealth, 0, 1);
 
         if (health <= 0)
         {
