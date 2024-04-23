@@ -73,11 +73,11 @@ public class playermovement  : MonoBehaviour
         
 
 // the script down here flips the player sprite when moving
-        if (playerDirection.x > 0 && facingLeft)
+        if (playerDirection.x < 0 && facingLeft)
         {
             Flip();
         }
-        if (playerDirection.x < 0 && !facingLeft)
+        if (playerDirection.x > 0 && !facingLeft)
         {
             Flip();
         }
