@@ -198,6 +198,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 277199619}
   m_CullTransparentMesh: 1
+--- !u!1 &313263838 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5021699675136457529, guid: 075b224ec153d5043adfd0f3e999cbdf, type: 3}
+  m_PrefabInstance: {fileID: 1690548515}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &313263839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313263838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb06cad7cdc9e2a4a8391de534fe882e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
 --- !u!1 &386627796
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,7 +498,7 @@ GameObject:
   m_Component:
   - component: {fileID: 992482941}
   - component: {fileID: 992482942}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EnemySpawner
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
@@ -572,7 +590,7 @@ MonoBehaviour:
   attackRange: 0.5
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
 --- !u!1 &1427028289 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3302474261316708091, guid: 430e7ddb84a7d3045aec6ab813f25db9, type: 3}
@@ -678,7 +696,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5021699675136457529, guid: 075b224ec153d5043adfd0f3e999cbdf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 313263839}
   m_SourcePrefab: {fileID: 100100000, guid: 075b224ec153d5043adfd0f3e999cbdf, type: 3}
 --- !u!1 &1797144057
 GameObject:
