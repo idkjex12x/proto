@@ -13,6 +13,10 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField]
     private bool canSpawn = true;
 
+
+    public Transform playerTransform;
+    public bool isfollowing;
+    public float followingDistance;
     private void Start()
     {
         StartCoroutine(Spawner());
@@ -20,7 +24,19 @@ public class EnemySpawner : MonoBehaviour
 
     private IEnumerator Spawner()
     {
-       
+       if (isfollowing)
+        {
+            if (transform.position.x > playerTransform.position.x)
+            {
+                transform.localScale = new Vector3 (1, 1, 1);
+                transform.position += Vector3.left * spawnRate * Time.deltaTime;
+            }
+            if (transform.position.x < playerTransform.position.x)
+            {
+                transform.localScale = new Vector3(1, 1, 1);
+                transform.position += Vector3.right * spawnRate * Time.deltaTime;
+            }
+        }
 
         while (canSpawn)
         {
@@ -31,4 +47,5 @@ public class EnemySpawner : MonoBehaviour
             Instantiate(enemyToSpawn, transform.position, Quaternion.identity);
         }
     }
+   
 }

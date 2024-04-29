@@ -532,11 +532,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4630a619a3891548901bdebdb1800c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 4.4
+  spawnRate: 5.11
   EnemyPrefabs:
   - {fileID: 5021699675136457529, guid: 075b224ec153d5043adfd0f3e999cbdf, type: 3}
   - {fileID: 6394008070796696943, guid: a0b2406ce700c8347afcfdf637db4a62, type: 3}
   canSpawn: 1
+  playerTransform: {fileID: 7690891224172909168}
+  isfollowing: 1
+  followingDistance: 0
 --- !u!224 &1070126929 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 830761398149646381, guid: ee23ec075eb72394ab9cbcc1fc808024, type: 3}
